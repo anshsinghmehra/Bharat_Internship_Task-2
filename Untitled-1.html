@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Temperature Converter By Ansh</title>
+</head>
+<body>
+    <div class="container">
+        <div class="usage-instructions">
+            <h2>How to Use converter :-</h2>
+            <ul>
+                <li>Enter a temperature in the input field.</li>
+                <li>Select the unit you want to convert from.</li>
+                <li>Click the "Convert" button to see the converted temperatures.</li>
+            </ul>
+        </div>
+        <div class="converter">
+            <h1>Temperature Converter</h1>
+            
+            <input type="number" id="temperatureInput" placeholder="Enter temperature">
+            
+            <select id="unitSelect">
+                <option value="celsius">Celsius</option>
+                <option value="kelvin">Kelvin</option>
+                <option value="fahrenheit">Fahrenheit</option>
+            </select>
+            
+            <button onclick="convertTemperature()">Convert</button>
+            
+            <h2>Converted Temperatures:</h2>
+            <p id="convertedResults"></p>
+        </div>
+    </div>
+  <script src="script.js"></script>
+</body>
+</html>
